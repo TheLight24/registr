@@ -1,0 +1,99 @@
+body {
+	background: #161512 linear-gradient(to bottom, #2e2a24, #161512 116px);
+}
+
+html {
+	font-size: calc( 12px + 2 * ((100vw - 320px) / 880));
+}
+
+.auth-btn {
+    background: #3692e7;
+	height: 50px;
+	width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 150ms;
+    color: white;
+}
+
+.auth-box {
+	background: #262421;
+	height: 100vh;
+	width: 40em;
+	margin: auto;
+	--box-padding: calc( 15px + 45 * ((100vw - 320px) / 880));
+	padding: 5vh var(--box-padding);
+}
+
+h1 {
+    font-size: calc( 20px + 20 * ((100vw - 320px) / 880));
+    margin-bottom: 5vh;
+    font-weight: normal;
+	color: white;
+}
+
+.form-control:invalid, .form-group.is-invalid .form-control {
+    border-color: #c33;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.7em + 2px);
+    background-clip: padding-box;
+}
+
+input {
+    background: #24221e;
+    border: 1px solid #404040;
+    padding: 0.6em 1em;
+    color: white;
+}
+
+.form-label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    cursor: text;
+    color: white;
+}
+
+.password-complexity {
+	margin-top: -2rem;
+    margin-bottom: 3rem;
+}
+
+div {
+    display: block;
+}
+
+.password-complexity-label {
+    font-size: 90%;
+    margin-top: 0.25rem;
+    color: #999;
+}
+
+.password-complexity-meter>* {
+    background-color: gray;
+    width: 25%;
+}
+
+.password-complexity-meter {
+    display: flex;
+    grid-gap: 0.25rem;
+    height: 0.4rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 3rem;
+}
+
+.form-help {
+    color: #999;
+}
+
+.form-help {
+    font-size: 90%;
+    margin-top: 0.25rem;
+}
